@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <div style="display: flex; justify-content: center; margin-top: 50px;">
+      <form action="" id="registration" style="width: 600px;">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <input type="text" name="name" placeholder="Name" />
+          <input type="email" name="email" part="@" placeholder="Email" />
+          <select name="gender">
+            <option value="">Select your gender</option>
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+            <option value="O">Others</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Location Information</legend>
+          <div>
+              <select name="country">
+                <option value="">Choose your country:</option>
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="india">India</option>
+                <option value="other">Other</option>
+              </select>
+          </div>
+
+          <textarea style="margin-top: 10px;" name="address" cols="50" rows="3" placeholder="Address"></textarea>
+        </fieldset>
+
+        <div style="display: flex; gap: 30px; justify-content: center; margin-top: 15px;">
+            <button type="submit">Submit</button>
+            <button type="reset" formtarget="registration">Reset</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
