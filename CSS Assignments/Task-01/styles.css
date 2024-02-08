@@ -1,0 +1,152 @@
+/* Basic reset and styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header and Navigation styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: small;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+/* Logo and Items on the Left */
+.logo img {
+  max-height: 40px; /* Set maximum height for the logo */
+}
+
+/* Right-side Elements */
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.search-bar input[type="text"],
+.search-bar button {
+  padding: 8px;
+  background-color: #060606;
+  color: white;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.icons img {
+  height: 22px; /* Set the height for the bell icon */
+  margin: 0 10px;
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    /* margin-top: 20px; */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    z-index: 5;
+    right: 0;
+    animation: fadeIn 0.3s ease-in-out;
+    box-shadow: 3px 11px 33px 7px rgba(184,184,184,0.64);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropbtn {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+  }
+  
+  .left {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Hide body overflow when dropdown is active */
+  .dropdown:hover ~ body {
+    overflow: hidden;
+  }
+  
+  a.title-font {
+    margin-bottom: 1rem; 
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold; 
+    text-transform: uppercase; 
+  }
+  
+  @media (min-width: 768px) {
+    a.title-font {
+      margin-bottom: 0;
+    }
+  }
+  
+  a.title-font {
+    color: #e50914; 
+  }
